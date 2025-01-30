@@ -1,0 +1,327 @@
+body {
+    font-family: initial;
+    background-color: #F9CEFF;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    margin: 0;
+    padding: 40;
+    box-sizing: border-box;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+
+}
+
+nav {
+    height: 120px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+}
+
+nav ul {
+    list-style:none;
+    display:flex;
+    gap: 1.5rem;
+    justify-content:center;
+}
+
+.nav li {
+    float:left;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.nav li ul {
+    display: none;
+    position:absolute;
+    width: auto;
+    min-width: 200%;
+    top: 100%;
+    left: 0;
+    padding: 10px 0px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li {
+    display: block;
+    width:100%;
+}
+
+.nav ul li ul {
+    background-color: white;
+}
+
+.nav li ul li a {
+    display: block;
+    width:100%;
+}
+
+.nav .sublink {
+    background-color: transparent;
+}
+
+.nav .sublink:hover {
+    background-color: #69278B ;
+    color: #FFFFFF;
+}
+
+.link {
+    font-size: 25px;
+    display: flex;
+    align-items:center;
+    margin: 5px;
+    gap: 40px;
+}
+
+.nav a {
+    color: #2f2f2f;
+    text-decoration:none;
+    padding: 10px 30px;
+    font-weight:inherit;
+    border-style: 20px;   
+}
+
+.nav a:hover {
+    color:#69278B;
+    transition: all 0.3s ease-in-out; 
+}
+
+.logo {
+    display:flex;
+    align-items: center;
+    align-self:auto;
+    font-weight: 700px;
+    width: 90px;
+    height: 90px;
+}
+
+.portadanos{
+    display: flex;
+    width: 100%;
+}
+
+.Titulo {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+    font-family: serif;
+    color:#69278B;
+    font-size: 30px;
+}
+
+.quienessomosnos {                 /* Inicia la seccion "Quienes somos*/
+    background-color: #FFFFFF;
+    margin:0px;
+    padding: 120px;
+}
+
+.somosquienes {                    /* titulo*/
+    display: flex;
+    margin-bottom: 40px;
+    font-family: serif;
+    font-size: 30px;
+}
+
+.Texto1 {
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.imagentex1 {
+    display: flex;
+    justify-content: center;
+}
+
+.nuestroproposito {               /*Aqui inicia seccion "Nuestro proposito*/
+    margin:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.proposito {                      /*titulo*/
+    margin-bottom: 40px;
+    font-family: serif;
+    font-size: 30px;
+    text-align: right;
+}
+
+.imagentext2 {
+    width: 600px;
+    height: 500px;
+    float: left;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    margin-right:50px;
+}
+
+.m-v {
+    margin-bottom: 100px;
+    font-family: serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.secmv {
+    background-color: #FFFFFF;
+    margin:0px;
+    padding: 120px;
+    min-height: 100vh;
+    
+}
+
+.Mision-vision {
+    position: relative;
+    width: 500px;
+    height: 550px;
+    margin: 150px;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.Mision-vision .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+}
+
+.Mision-vision .front {
+    transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.Mision-vision .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Mision-vision .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+
+.Mision-vision .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.Mision-vision .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.Mision-vision .back p {
+    letter-spacing: 1px;
+}
+
+.Mision-vision:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.Mision-vision:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+footer {
+    background-color: #69278B;
+    color: #FFFFFF;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    
+}
+
+.containerfoot {
+    width: 90%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+.col {
+    text-align: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.enpie {
+    margin: 30px;
+    font-size: 30px;
+}
+
+.rds {
+    width: 35px;
+    align-content:space-between;
+    margin-left: 33px;
+    margin-right: 0px;
+}
