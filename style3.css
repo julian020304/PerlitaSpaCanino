@@ -392,6 +392,124 @@ a {
 .rds {
     width: 35px;
     align-content:space-between;
-    margin-left: 33px;
+    margin-left: 45px;
     margin-right: 0px;
+    margin-bottom: 15px;
 }
+
+
+/* contactanos */
+
+.contac {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    margin:0px;
+    padding: 120px;
+
+    
+}
+
+form {
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 640px;
+    background-color: #69278B;
+    margin-left: 150px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 50px;
+    background-color:transparent ;
+}
+
+label {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    color: #283629;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: gray;
+}
+
+.btn {
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 25px;
+    background-color:#FEBD1B;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #F9CEFF;
+    color: #000;
+}
+
+@media(max-width: 991px) {
+    body {
+        padding: 30px;
+    }
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px;
+    }
+}
+
+.contacta {
+    display: flex;
+    margin-bottom: 40px;
+    font-family: serif;
+    font-size: 30px;
+    align-content: center;
+    justify-content: center;
+    background-color: #b47ad1;
+    color: #ffffFF;
+    margin:0px;
+    padding: 120px;
+}
+
+.texcontac {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+}
+
+.ubicacion {
+    margin:0px;
+    padding: 120px;
+}
+
+.tiubi {
+    display: flex;
+    margin-bottom: 60px;
+    font-family: serif;
+    font-size: 30px;
+}
+

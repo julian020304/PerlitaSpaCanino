@@ -14,24 +14,6 @@ body {
     box-sizing: border-box;
 }
 
-#menu {
-    display: none;
-}
-
-.menu-icono {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-.header-content {
-    text-align: center;
-
-}
-
 nav {
     height: 120px;
     display:flex;
@@ -135,6 +117,9 @@ h1 {
 
 .contenedor {
     text-align: center;
+    margin:0px;
+    padding: 120px;
+    min-height: 100vh;
 }
 
 .portada {
@@ -153,6 +138,7 @@ h2 {
     margin:0px;
     padding: 120px;
     background-color: #FFFFFF;
+    min-height: 100vh;
 }
 
 .Texto2 {
@@ -192,6 +178,7 @@ h2 {
 .seccion2 {
     margin:0px;
     padding: 120px;
+    min-height: 100vh;
 }
 
 .sabermas:hover {
@@ -267,8 +254,9 @@ button:active {
 }
 
 .text-box {
-    background-color: chartreuse;
-    justify-items: right;
+    font-family: serif;
+    font-size: 30px;
+    text-align: right;
 }
 
 .nproductos {
@@ -276,7 +264,6 @@ button:active {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 45px;
     display: flex;
-
 }
 
 .texto4 {
@@ -287,12 +274,12 @@ button:active {
 }
 
 .modelo1 {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    border-style: solid;
+    width: 600px;
+    height: 500px;
     float: left;
-    margin-right: 20px;
+    border: 3px solid #0000;
+    border-radius: 20px;
+    margin-right:50px;
 }
 
 .verproductos {
@@ -319,19 +306,18 @@ button:active {
 .productosspa {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
 }
 
 .productos {
     display: flex;
-    flex-direction:column;
-    margin: 150px auto;
-    width: 70%;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-  
+ 
 .seccion4 {
-    margin: 0;
-    padding: 0;
+    margin:0px;
+    padding: 120px;
     display: flex;
     height: 100vh;
     width: 100%;
@@ -582,6 +568,7 @@ a {
 .rds {
     width: 35px;
     align-content:space-between;
-    margin-left: 33px;
+    margin-left: 45px;
     margin-right: 0px;
+    margin-bottom: 15px;
 }
